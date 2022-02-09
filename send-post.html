@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading-books</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@300&family=PT+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/jquery.formstyler.css">
+    <link rel="stylesheet" href="./css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<header class="header send-post__header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="header__logo" href="#">
+                <img class="header__logo-img" src="./images/logo-black.svg" alt="logo">
+            </a>
+
+            <div class="help-box">
+                <a class="help-box__link" href="#">Помочь ❤️</a>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="send-post">
+    <div class="container-fluid">
+        <h2 class="send-post__title">
+            опубликовать материал
+        </h2>
+        <form action="" class="send-post__form">
+            <label for="" class="send-post__form-top">
+                <input type="text" class="send-post__form-header" placeholder="Заголовок ">
+                <div class="edit-box">
+                    <img src="./images/box-icon.svg" alt="">
+                </div>
+            </label>
+            <span class="box-info__author">Имя автора</span>
+            <span class="box-info__date">28.12.2021</span>
+            <!-- <div class="box-info">
+                <span class="box-info__author">Имя автора</span>
+                <span class="box-info__date">28.12.2021</span>
+            </div> -->
+            <textarea class="send-post__form-textarea" placeholder="Ваша история ..."></textarea>
+
+        </form>
+
+        <div class="send-post__info">
+            <h5 class="send-post__info-title">
+                на странице публикации
+                у вас есть возможность
+            </h5>
+            <ul class="send-post__info-list">
+                <li class="send-post__info-item">
+                    Редактировать заголовок публикации
+                </li>
+                <li class="send-post__info-item">
+                    Указать автора или остаться инкогнито
+                </li>
+                <li class="send-post__info-item">
+                    Добавлять ссылки на сторонние ресурсы
+                </li>
+                <li class="send-post__info-item">
+                    Редактировать типографику (размер и цвет шрифта)
+                </li>
+                <li class="send-post__info-item">
+                    Добавлять контент (видео и аудио)
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.formstyler.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
