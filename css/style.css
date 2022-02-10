@@ -264,7 +264,6 @@ body {
 .posts__items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(12, 100px);
   grid-gap: 10px;
   height: 900px;
   overflow-y: scroll;
@@ -306,7 +305,7 @@ body {
 }
 .posts__item:nth-child(2n) {
   grid-row: 4 span;
-  /* background-image: url(../images/lit-item-bg-1.svg); */
+  background-image: url(../images/lit-item-bg-3.png);
   background-color: #172df8;
   color: #fff;
   padding-bottom: 50px;

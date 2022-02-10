@@ -17,4 +17,15 @@ $(function () {
             $('.menu__list').removeClass('menu__list--active');
         }
     })
+
+    // grid depended on amount of items
+
+    function changeGrid(){
+        console.log($('.posts__items').children().length)
+        let amount = $('.posts__items').children().length
+        $('.posts__items').css('grid-template-rows', `repeat(${amount + 6}, 100px)`)
+
+    }
+    changeGrid()
+
 })
