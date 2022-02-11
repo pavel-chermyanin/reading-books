@@ -20,12 +20,36 @@ $(function () {
 
     // grid depended on amount of items
 
-    function changeGrid(){
-        console.log($('.posts__items').children().length)
+    if ($(window).width() < 851) {
+        let amount = $('.posts__items').children().length
+        $('.posts__items').css('grid-template-rows', `repeat(${amount + 22}, 100px)`)
+    }
+
+    else  if ($(window).width() < 1101) {
         let amount = $('.posts__items').children().length
         $('.posts__items').css('grid-template-rows', `repeat(${amount + 6}, 100px)`)
-
+    } else {
+        let amount = $('.posts__items').children().length
+        $('.posts__items').css('grid-template-rows', `repeat(${amount}, 100px)`)
     }
-    changeGrid()
+    
+
+    $(window).resize(function () {
+        if ($(window).width() < 851) {
+            let amount = $('.posts__items').children().length
+            $('.posts__items').css('grid-template-rows', `repeat(${amount + 22}, 100px)`)
+        }
+        else if ($(window).width() < 1101) {
+            let amount = $('.posts__items').children().length
+            $('.posts__items').css('grid-template-rows', `repeat(${amount + 6}, 100px)`)
+        } else {
+            let amount = $('.posts__items').children().length
+            $('.posts__items').css('grid-template-rows', `repeat(${amount}, 100px)`)
+        }
+    })
+
+    
+
+    
 
 })

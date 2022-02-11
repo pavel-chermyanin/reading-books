@@ -124,12 +124,14 @@
 }
 @media (max-width: 580px) {
   .posts__items {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
+    display: block;
     /* grid-template-rows: auto; */
   }
   .posts__item {
     height: 250px;
+  }
+  .posts__item + .posts__item{
+    margin-top: 10px;
   }
   .posts__links-img {
   }
